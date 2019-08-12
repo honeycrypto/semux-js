@@ -9,6 +9,10 @@ import TransactionType from "../TransactionType";
 import * as API from "./api";
 import {Configuration} from "./configuration";
 
+/*
+See instructions here:
+https://github.com/semuxproject/semux-core/blob/master/docs/Devnet.md#devnet-validator
+*/
 const DEV_KEY = Key.importEncodedPrivateKey(Buffer.from(
   "302e020100300506032b657004220420acbd5f2cb2b6053f704376d12df99f2aa163d267a755c7f1d9fe55d2a2dc5405",
   "hex"
@@ -20,7 +24,7 @@ describe("Semux API Test", () => {
   const config = new Configuration({
     username: "user",
     password: "pass",
-    basePath: "http://localhost:5171/v2.1.0"
+    basePath: "http://localhost:5171/v2.3.0"
   });
 
   const api = new API.SemuxApi(config);
@@ -30,7 +34,7 @@ describe("Semux API Test", () => {
     chai.assert.isTrue(response.success)
   });
 
-  it("PUT /whitelist", async () => {
+  it("POST /whitelist", async () => {
     const response = await api.addToWhitelist("1.2.3.4");
     chai.assert.isTrue(response.success)
   });
@@ -39,7 +43,6 @@ describe("Semux API Test", () => {
     const response = await api.listAccounts();
     chai.assert.isTrue(response.success)
     chai.assert.deepEqual(response.result, [
-      "0x2df87e6d8bc749574af35a65cf8d4a69844495ed",
       `0x${DEV_ADDRESS}`
     ]);
   });
@@ -73,6 +76,8 @@ describe("Semux API Test", () => {
       "hash": `0x${Buffer.from(tx.getHash().buffer).toString('hex')}`,
       "type": API.TransactionType.TypeEnum.TRANSFER,
       "from": `0x${DEV_ADDRESS}`,
+      "gas": "0",
+      "gasPrice": "0",
       "to": `0x${DEV_ADDRESS}`,
       "value": "1234567890",
       "fee": "5000000",

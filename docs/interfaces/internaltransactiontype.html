@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PeerType | semux-js-sdk</title>
+	<title>InternalTransactionType | semux-js-sdk</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,10 +54,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="peertype.html">PeerType</a>
+					<a href="internaltransactiontype.html">InternalTransactionType</a>
 				</li>
 			</ul>
-			<h1>Interface PeerType</h1>
+			<h1>Interface InternalTransactionType</h1>
 		</div>
 	</div>
 </header>
@@ -70,7 +70,7 @@
 						<dt>export</dt>
 						<dd></dd>
 						<dt>interface</dt>
-						<dd><p>PeerType</p>
+						<dd><p>InternalTransactionType</p>
 						</dd>
 					</dl>
 				</div>
@@ -79,7 +79,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">PeerType</span>
+						<span class="target">InternalTransactionType</span>
 					</li>
 				</ul>
 			</section>
@@ -90,14 +90,17 @@
 						<section class="tsd-index-section tsd-is-external">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="peertype.html#capabilities" class="tsd-kind-icon">capabilities</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="peertype.html#clientid" class="tsd-kind-icon">client<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="peertype.html#ip" class="tsd-kind-icon">ip</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="peertype.html#latency" class="tsd-kind-icon">latency</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="peertype.html#latestblocknumber" class="tsd-kind-icon">latest<wbr>Block<wbr>Number</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="peertype.html#networkversion" class="tsd-kind-icon">network<wbr>Version</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="peertype.html#peerid" class="tsd-kind-icon">peer<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="peertype.html#port" class="tsd-kind-icon">port</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="internaltransactiontype.html#data" class="tsd-kind-icon">data</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="internaltransactiontype.html#depth" class="tsd-kind-icon">depth</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="internaltransactiontype.html#from" class="tsd-kind-icon">from</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="internaltransactiontype.html#gas" class="tsd-kind-icon">gas</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="internaltransactiontype.html#gasprice" class="tsd-kind-icon">gas<wbr>Price</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="internaltransactiontype.html#index" class="tsd-kind-icon">index</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="internaltransactiontype.html#nonce" class="tsd-kind-icon">nonce</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="internaltransactiontype.html#rejected" class="tsd-kind-icon">rejected</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="internaltransactiontype.html#to" class="tsd-kind-icon">to</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="internaltransactiontype.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="internaltransactiontype.html#value" class="tsd-kind-icon">value</a></li>
 							</ul>
 						</section>
 					</div>
@@ -106,185 +109,254 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-external">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-					<a name="capabilities" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> capabilities</h3>
-					<div class="tsd-signature tsd-kind-icon">capabilities<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<a name="data" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> data</h3>
+					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/semuxproject/semux-js/blob/778f020/lib/api/api.ts#L520">lib/api/api.ts:520</a></li>
+							<li>Defined in <a href="https://github.com/semuxproject/semux-js/blob/778f020/lib/api/api.ts#L438">lib/api/api.ts:438</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The features supported by the peer</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>type</dt>
-							<dd><p>{Array&lt;string&gt;}</p>
-							</dd>
-							<dt>memberof</dt>
-							<dd><p>PeerType</p>
-							</dd>
-						</dl>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-					<a name="clientid" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> client<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">client<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/semuxproject/semux-js/blob/778f020/lib/api/api.ts#L496">lib/api/api.ts:496</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The client the peer is using</p>
+							<p>The data being passed, in hexadecimal string</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>type</dt>
 							<dd><p>{string}</p>
 							</dd>
 							<dt>memberof</dt>
-							<dd><p>PeerType</p>
+							<dd><p>InternalTransactionType</p>
 							</dd>
 						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-					<a name="ip" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> ip</h3>
-					<div class="tsd-signature tsd-kind-icon">ip<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="depth" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> depth</h3>
+					<div class="tsd-signature tsd-kind-icon">depth<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/semuxproject/semux-js/blob/778f020/lib/api/api.ts#L478">lib/api/api.ts:478</a></li>
+							<li>Defined in <a href="https://github.com/semuxproject/semux-js/blob/778f020/lib/api/api.ts#L384">lib/api/api.ts:384</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The IP address</p>
+							<p>Call depth</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>type</dt>
 							<dd><p>{string}</p>
 							</dd>
 							<dt>memberof</dt>
-							<dd><p>PeerType</p>
+							<dd><p>InternalTransactionType</p>
 							</dd>
 						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-					<a name="latency" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> latency</h3>
-					<div class="tsd-signature tsd-kind-icon">latency<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="from" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> from</h3>
+					<div class="tsd-signature tsd-kind-icon">from<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/semuxproject/semux-js/blob/778f020/lib/api/api.ts#L514">lib/api/api.ts:514</a></li>
+							<li>Defined in <a href="https://github.com/semuxproject/semux-js/blob/778f020/lib/api/api.ts#L402">lib/api/api.ts:402</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Latency between this node and the peer</p>
+							<p>Sender address</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>type</dt>
 							<dd><p>{string}</p>
 							</dd>
 							<dt>memberof</dt>
-							<dd><p>PeerType</p>
+							<dd><p>InternalTransactionType</p>
 							</dd>
 						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-					<a name="latestblocknumber" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> latest<wbr>Block<wbr>Number</h3>
-					<div class="tsd-signature tsd-kind-icon">latest<wbr>Block<wbr>Number<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="gas" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> gas</h3>
+					<div class="tsd-signature tsd-kind-icon">gas<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/semuxproject/semux-js/blob/778f020/lib/api/api.ts#L508">lib/api/api.ts:508</a></li>
+							<li>Defined in <a href="https://github.com/semuxproject/semux-js/blob/778f020/lib/api/api.ts#L420">lib/api/api.ts:420</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The latest block number of the peer</p>
+							<p>The gas limit</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>type</dt>
 							<dd><p>{string}</p>
 							</dd>
 							<dt>memberof</dt>
-							<dd><p>PeerType</p>
+							<dd><p>InternalTransactionType</p>
 							</dd>
 						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-					<a name="networkversion" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> network<wbr>Version</h3>
-					<div class="tsd-signature tsd-kind-icon">network<wbr>Version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="gasprice" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> gas<wbr>Price</h3>
+					<div class="tsd-signature tsd-kind-icon">gas<wbr>Price<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/semuxproject/semux-js/blob/778f020/lib/api/api.ts#L490">lib/api/api.ts:490</a></li>
+							<li>Defined in <a href="https://github.com/semuxproject/semux-js/blob/778f020/lib/api/api.ts#L426">lib/api/api.ts:426</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The network version</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>type</dt>
-							<dd><p>{number}</p>
-							</dd>
-							<dt>memberof</dt>
-							<dd><p>PeerType</p>
-							</dd>
-						</dl>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-					<a name="peerid" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> peer<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">peer<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/semuxproject/semux-js/blob/778f020/lib/api/api.ts#L502">lib/api/api.ts:502</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The id of the peer</p>
+							<p>The gas Price</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>type</dt>
 							<dd><p>{string}</p>
 							</dd>
 							<dt>memberof</dt>
-							<dd><p>PeerType</p>
+							<dd><p>InternalTransactionType</p>
 							</dd>
 						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-					<a name="port" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> port</h3>
-					<div class="tsd-signature tsd-kind-icon">port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="index" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> index</h3>
+					<div class="tsd-signature tsd-kind-icon">index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/semuxproject/semux-js/blob/778f020/lib/api/api.ts#L484">lib/api/api.ts:484</a></li>
+							<li>Defined in <a href="https://github.com/semuxproject/semux-js/blob/778f020/lib/api/api.ts#L390">lib/api/api.ts:390</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The port number</p>
+							<p>Call index</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>type</dt>
-							<dd><p>{number}</p>
+							<dd><p>{string}</p>
 							</dd>
 							<dt>memberof</dt>
-							<dd><p>PeerType</p>
+							<dd><p>InternalTransactionType</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+					<a name="nonce" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> nonce</h3>
+					<div class="tsd-signature tsd-kind-icon">nonce<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/semuxproject/semux-js/blob/778f020/lib/api/api.ts#L414">lib/api/api.ts:414</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The sender&#39;s nonce</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>type</dt>
+							<dd><p>{string}</p>
+							</dd>
+							<dt>memberof</dt>
+							<dd><p>InternalTransactionType</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+					<a name="rejected" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> rejected</h3>
+					<div class="tsd-signature tsd-kind-icon">rejected<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/semuxproject/semux-js/blob/778f020/lib/api/api.ts#L378">lib/api/api.ts:378</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Whether this transaction is rejected</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>type</dt>
+							<dd><p>{boolean}</p>
+							</dd>
+							<dt>memberof</dt>
+							<dd><p>InternalTransactionType</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+					<a name="to" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> to</h3>
+					<div class="tsd-signature tsd-kind-icon">to<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/semuxproject/semux-js/blob/778f020/lib/api/api.ts#L408">lib/api/api.ts:408</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Receiver address</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>type</dt>
+							<dd><p>{string}</p>
+							</dd>
+							<dt>memberof</dt>
+							<dd><p>InternalTransactionType</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+					<a name="type" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> type</h3>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/semuxproject/semux-js/blob/778f020/lib/api/api.ts#L396">lib/api/api.ts:396</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Call type, possibly CALL, DELEGATECALL, CALLCODE, CREATE</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>type</dt>
+							<dd><p>{string}</p>
+							</dd>
+							<dt>memberof</dt>
+							<dd><p>InternalTransactionType</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+					<a name="value" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> value</h3>
+					<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/semuxproject/semux-js/blob/778f020/lib/api/api.ts#L432">lib/api/api.ts:432</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The value being passed, in nano SEM</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>type</dt>
+							<dd><p>{string}</p>
+							</dd>
+							<dt>memberof</dt>
+							<dd><p>InternalTransactionType</p>
 							</dd>
 						</dl>
 					</div>
@@ -304,31 +376,40 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-is-external">
-						<a href="peertype.html" class="tsd-kind-icon">Peer<wbr>Type</a>
+						<a href="internaltransactiontype.html" class="tsd-kind-icon">Internal<wbr>Transaction<wbr>Type</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-								<a href="peertype.html#capabilities" class="tsd-kind-icon">capabilities</a>
+								<a href="internaltransactiontype.html#data" class="tsd-kind-icon">data</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-								<a href="peertype.html#clientid" class="tsd-kind-icon">client<wbr>Id</a>
+								<a href="internaltransactiontype.html#depth" class="tsd-kind-icon">depth</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-								<a href="peertype.html#ip" class="tsd-kind-icon">ip</a>
+								<a href="internaltransactiontype.html#from" class="tsd-kind-icon">from</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-								<a href="peertype.html#latency" class="tsd-kind-icon">latency</a>
+								<a href="internaltransactiontype.html#gas" class="tsd-kind-icon">gas</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-								<a href="peertype.html#latestblocknumber" class="tsd-kind-icon">latest<wbr>Block<wbr>Number</a>
+								<a href="internaltransactiontype.html#gasprice" class="tsd-kind-icon">gas<wbr>Price</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-								<a href="peertype.html#networkversion" class="tsd-kind-icon">network<wbr>Version</a>
+								<a href="internaltransactiontype.html#index" class="tsd-kind-icon">index</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-								<a href="peertype.html#peerid" class="tsd-kind-icon">peer<wbr>Id</a>
+								<a href="internaltransactiontype.html#nonce" class="tsd-kind-icon">nonce</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-								<a href="peertype.html#port" class="tsd-kind-icon">port</a>
+								<a href="internaltransactiontype.html#rejected" class="tsd-kind-icon">rejected</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+								<a href="internaltransactiontype.html#to" class="tsd-kind-icon">to</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+								<a href="internaltransactiontype.html#type" class="tsd-kind-icon">type</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+								<a href="internaltransactiontype.html#value" class="tsd-kind-icon">value</a>
 							</li>
 						</ul>
 					</li>
